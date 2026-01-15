@@ -1,0 +1,56 @@
+:root{
+    --background-color:#ffffff;
+    --text-color:#111111;
+    --card-bg:#f4f4f4 ;
+    --btn-bg: #111111;
+    --btn-text: #ffffff;
+}
+
+body.dark{
+    --background-color:#121212;
+    --text-color:#ffffff;
+    --card-bg:#1e1e1e ;
+    --btn-bg:#ffffff;
+    --btn-text: #121212;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.container{
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 300px;
+    transition: all 0.3s ease;
+}
+
+button{
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
